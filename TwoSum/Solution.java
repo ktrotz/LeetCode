@@ -3,7 +3,6 @@ package TwoSum;
 import java.util.HashMap;
 
 class Solution {
-
     public static int[] twoSum(int[] nums, int target) {
 
         HashMap<Integer, Integer> sumMap = new HashMap<>();
@@ -24,12 +23,8 @@ class Solution {
 
     public static void main(String[] args) {
 
-        // int[] input = { 2, 5, 5, 11 };
         int[] input = { 2, 7, 11, 15 };
         int target = 9;
-
         twoSum(input, target);
-
     }
-
 }
