@@ -5,18 +5,15 @@ public class Solution {
     public static int reverse(int x) {
 
         String reverse = "";
-        int negative;
+        int checkString = 0;
         if (x < 0) {
-            negative = 1;
+            checkString = 1;
             reverse = "-";
-        } else {
-            negative = 0;
-            reverse = "";
         }
 
         String input = Integer.toString(x);
 
-        for (int n = input.length() - 1; n >= negative; n--) {
+        for (int n = input.length() - 1; n >= checkString; n--) {
             reverse = reverse + input.charAt(n);
         }
 
